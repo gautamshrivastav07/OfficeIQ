@@ -1,0 +1,20 @@
+[
+  {
+    "employeeId": "EMP001",
+    "annualLeave": {
+      "total": 20,
+      "used": 8,
+      "remaining": 12
+    },
+    "sickLeave": {
+      "total": 10,
+      "used": 2,
+      "remaining": 8
+    },
+    "casualLeave": {
+      "total": 6,
+      "used": 1,
+      "remaining": 5
+    }
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "COURSE001",
+    "title": "Advanced React Native",
+    "category": "Mobile",
+    "duration": "8 Hours",
+    "progress": 65,
+    "status": "In Progress",
+    "link": "https://www.example.com/advanced-react-native"
+  },
+  {
+    "id": "COURSE002",
+    "title": "Leadership Essentials",
+    "category": "Management",
+    "duration": "6 Hours",
+    "progress": 100,
+    "status": "Completed",
+    "link": "https://www.example.com/advanced-react-native"
+  }
+]

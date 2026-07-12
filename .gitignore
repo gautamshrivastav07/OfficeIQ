@@ -1,0 +1,25 @@
+# React Native
+node_modules/
+
+# iOS
+ios/Pods/
+ios/build/
+
+# Android
+android/.gradle/
+android/app/build/
+android/build/
+
+# Metro
+.metro/
+
+# Xcode
+*.xcworkspace
+!ios/*.xcworkspace
+DerivedData/
+
+# Logs
+*.log
+
+# Env
+.env

@@ -1,0 +1,14 @@
+{
+  "id": "EMP001",
+  "employeeCode": "1001",
+  "name": "Gautam Shrivastav",
+  "designation": "React Native Lead",
+  "department": "Engineering",
+  "manager": "Rahul Sharma",
+  "email": "gautam.shrivastav@officeiq.com",
+  "phone": "+91-9876543210",
+  "location": "Noida",
+  "joiningDate": "2022-07-12",
+  "employmentType": "Full Time",
+  "avatar": "https://i.pravatar.cc/300?img=1"
+}

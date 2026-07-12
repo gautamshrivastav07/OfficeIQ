@@ -1,0 +1,44 @@
+[
+  {
+    "employeeId": "EMP001",
+    "employeeCode": "1001",
+    "month": "July",
+    "year": 2026,
+    "salary": {
+      "basic": 120000,
+      "hra": 48000,
+      "specialAllowance": 25000,
+      "transportAllowance": 5000,
+      "otherAllowance": 7000,
+      "grossSalary": 205000
+    },
+    "deductions": {
+      "providentFund": 1800,
+      "professionalTax": 200,
+      "incomeTax": 22000,
+      "healthInsurance": 1500,
+      "totalDeductions": 25500
+    },
+    "reimbursements": {
+      "internet": 1500,
+      "mobile": 1000,
+      "travel": 5000,
+      "total": 7500
+    },
+    "bonus": {
+      "performanceBonus": 10000,
+      "joiningBonus": 0
+    },
+    "netSalary": 197000,
+    "payment": {
+      "status": "Credited",
+      "paymentDate": "2026-07-31",
+      "bank": "HDFC Bank",
+      "accountEnding": "4587",
+      "transactionId": "TXN20260731001"
+    },
+    "documents": {
+      "salarySlip": "https://pdfobject.com/pdf/sample.pdf"
+    }
+  }
+]
