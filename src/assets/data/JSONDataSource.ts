@@ -23,6 +23,7 @@ export const dataSources: DataSource[] = [
     id: "employees",
     keywords: [
       "employee",
+      "employees",
       "manager",
       "designation",
       "department",
@@ -36,7 +37,7 @@ export const dataSources: DataSource[] = [
     id: "leave",
     keywords: [
       "leave",
-      "holiday",
+      "leaves",
       "vacation",
       "annual",
       "casual",
@@ -63,7 +64,8 @@ export const dataSources: DataSource[] = [
       "holiday",
       "calendar",
       "event",
-      "celebration"
+      "celebration",
+      "festival"
     ],
     fileName: "holidayCalendar.json",
     data: holidayCalendar,

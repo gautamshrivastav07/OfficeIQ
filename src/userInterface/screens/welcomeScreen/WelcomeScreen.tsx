@@ -30,7 +30,8 @@ export default function WelcomeScreen({ navigation }: WelcomeScreenProps) {
     <SafeAreaView style={styles.container}>
       <KeyboardAvoidingView
         style={{ flex: 1 }}
-        behavior={Platform.OS === 'ios' ? 'padding' : undefined}>
+        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+        keyboardVerticalOffset={Platform.OS === 'ios' ? 80 : 0}>
         <View style={styles.content}>
 
           <View style={styles.logoContainer}>

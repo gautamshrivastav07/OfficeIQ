@@ -1,5 +1,3 @@
-// services/aiService.ts
-
 import { askGemini } from "./GeminiService";
 
 export async function getAIResponse(userQuery: string) {

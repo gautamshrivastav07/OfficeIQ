@@ -92,7 +92,8 @@ export default function ChatScreen({ navigation, route }: any) {
       <View style={styles.headerBackdrop} />
       <KeyboardAvoidingView
         style={styles.container}
-        behavior={Platform.OS == 'ios' ? 'padding' : undefined}>
+        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+        keyboardVerticalOffset={Platform.OS === 'ios' ? 80 : 0}>
 
         <View style={styles.header}>
           <TouchableOpacity style={styles.backButton} onPress={() => navigation.goBack()}>
@@ -132,15 +133,18 @@ export default function ChatScreen({ navigation, route }: any) {
           contentContainerStyle={{
             paddingHorizontal: 16,
             paddingTop: 20,
-            paddingBottom: 220,
+            paddingBottom: 24,
           }}
+          keyboardShouldPersistTaps="handled"
           ListFooterComponentStyle={styles.loaderFooter}
         />
 
-        <ChatInput
-          maxHeight={MAX_INPUT_HEIGHT}
-          onSend={sendMessage}
-        />
+        <View style={styles.chatInputWrapper}>
+          <ChatInput
+            maxHeight={MAX_INPUT_HEIGHT}
+            onSend={sendMessage}
+          />
+        </View>
 
       </KeyboardAvoidingView>
     </SafeAreaView>
@@ -225,5 +229,9 @@ const styles = StyleSheet.create({
   },
   loaderFooter: {
     paddingBottom: 12,
+  },
+  chatInputWrapper: {
+    paddingBottom: Platform.OS === 'ios' ? 16 : 12,
+    backgroundColor: '#111',
   },
 });

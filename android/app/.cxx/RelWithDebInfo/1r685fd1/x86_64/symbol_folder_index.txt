@@ -1,0 +1,1 @@
+/Users/appz/Desktop/PublicisApp/OfficeIQ/android/app/build/intermediates/cxx/RelWithDebInfo/1r685fd1/obj/x86_64

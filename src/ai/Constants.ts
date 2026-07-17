@@ -1,5 +1,3 @@
-export const GEMINI_MODEL = 'gemini-2.5-flash';
-
 export const SYSTEM_PROMPT = (userQuestion: string, jsonContext: any) => `
 You are OfficeIQ, an intelligent employee assistant.
 

@@ -1,6 +1,24 @@
+import java.io.File
+
 pluginManagement { includeBuild("../node_modules/@react-native/gradle-plugin") }
 plugins { id("com.facebook.react.settings") }
-extensions.configure(com.facebook.react.ReactSettingsExtension){ ex -> ex.autolinkLibrariesFromCommand() }
+
+def getNpxPath() {
+    def npx = "npx"
+    def os = System.getProperty("os.name").toLowerCase()
+    if (os.contains("mac") || os.contains("linux")) {
+        for (def path : ['/usr/local/bin/npx', '/opt/homebrew/bin/npx', '/usr/bin/npx']) {
+            if (new File(path).exists()) {
+                return path
+            }
+        }
+    }
+    return npx
+}
+
+extensions.configure(com.facebook.react.ReactSettingsExtension){ ex -> 
+    ex.autolinkLibrariesFromCommand([getNpxPath(), "@react-native-community/cli", "config"]) 
+}
 rootProject.name = 'OfficeIQ'
 include ':app'
 includeBuild('../node_modules/@react-native/gradle-plugin')
