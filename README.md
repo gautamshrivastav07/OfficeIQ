@@ -85,7 +85,18 @@ Follow these steps from the project root to run OfficeIQ locally.
 	yarn install
 	```
 
-3. iOS native dependencies (macOS only)
+3. Environment configuration
+	This project uses `react-native-config` for environment variables.
+
+	- Create a `.env` file in the project root.
+	- Add the required values in the following format:
+		```env
+		GEMINI_API_KEY=your_gemini_api_key_here
+		```
+	- After updating the `.env` file, restart Metro and rebuild the app so the new values are picked up.
+	- Keep secrets out of version control. Make sure `.env` is listed in your `.gitignore` file.
+
+4. iOS native dependencies (macOS only)
 	```bash
 	# From ios/ folder
 	cd ios
@@ -98,12 +109,12 @@ Follow these steps from the project root to run OfficeIQ locally.
 	cd ..
 	```
 
-4. Start Metro with cache reset (recommended when first run or after native changes)
+5. Start Metro with cache reset (recommended when first run or after native changes)
 	```bash
 	npx react-native start --reset-cache
 	```
 
-5. Run the app
+6. Run the app
 	- iOS (macOS):
 	  ```bash
 	  npx react-native run-ios
@@ -116,7 +127,7 @@ Follow these steps from the project root to run OfficeIQ locally.
 	  ```
 	  Make sure an emulator is running or a device is connected with USB debugging enabled.
 
-6. Common troubleshooting commands
+7. Common troubleshooting commands
 	- Reset Metro & clear caches:
 	  ```bash
 	  npx react-native start --reset-cache
@@ -129,7 +140,7 @@ Follow these steps from the project root to run OfficeIQ locally.
 	  pod install
 	  ```
 
-7. Environment hints
+8. Environment hints
 	- If you see "AppRegistry.registerComponent" or module load errors, ensure Metro is started from the project root and rebuild the app.
 	- For Apple Silicon macs, you may need to run CocoaPods under the Intel architecture if pods fail (`arch -x86_64 pod install`).
 
